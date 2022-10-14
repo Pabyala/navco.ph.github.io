@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* h1{
+    font-size: 60px;
+    font-family: 'Michroma', sans-serif;
+} */
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(to right, #99bfd1, #327999);
+}
+.container .welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 1400px; */
+    background-color: burlywood;
+    
+}
+.container .welcome .welcome-txt-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.welcome-txt-wrap .welcome-text h1{
+    font-size: 60px;
+    font-family: 'Michroma', sans-serif;
+}
+.welcome-txt-wrap .welcome-text h1 .navco{
+    font-size: 60px;
+    font-family: 'Michroma', sans-serif;
+    color: blue;
+}
+.welcome-txt-wrap .welcome-text .company-name{
+    font-size: 30px;
+}
+.welcome-txt-wrap .welcome-text p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.welcome-txt-wrap .find-us{
+    margin-top: 28px;
+    display: flex;
+}
+.welcome-txt-wrap .find-us p{
+    font-size: 18px;
+}
+.welcome-txt-wrap .find-us .bx-chevrons-right{
+    padding-top: 3px;
+    font-size: 23px;
+    margin: 0 5px;
+}
+.welcome-txt-wrap .find-us ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100px;
+    padding-top: 2px;
+}
+.welcome-txt-wrap .find-us li{
+}
+.welcome-txt-wrap .find-us a{
+    cursor: pointer;
+}
+.welcome-txt-wrap .find-us i{
+    font-size: 23px;
+}
+.welcome-txt-wrap .bxl-linkedin-square{
+    color: #0071c2;
+}
+.welcome-txt-wrap .bxl-chrome{
+    color: black;
+}
+.welcome-txt-wrap .bxl-twitter{
+    color: #00acee;
+}
+.welcome-txt-wrap .btn{
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    width: 130px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    transition: .3s ease;
+    font-size: 16px;
+}
+.welcome-txt-wrap .btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.welcome-text .animation{
+    animation: comp-name 800ms ease;
+}
+.welcome .welcome-image{
+    animation: welcome-image 800ms ease;
+}
+
+
+@keyframes comp-name{
+    0%{
+        transform: translateX(-100%);
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes welcome-image{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    /* .container{
+        max-width: 1140px;
+    } */
+    .container .welcome{
+        max-width: 1400px;
+        background-color: burlywood;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1439px){
+    .container .welcome{
+        max-width: 1170px;
+        background-color: burlywood;
+    }
+    .welcome-txt-wrap .welcome-text h1 {
+        font-size: 50px;
+    }
+    .welcome-txt-wrap .welcome-text h1 .navco{
+        font-size: 50px;
+    }
+    .welcome-txt-wrap .welcome-text .company-name{
+        font-size: 28px;
+    }
+    .welcome-txt-wrap .welcome-text p {
+        margin-top: 4px;
+        font-size: 16px;
+    }
+    .welcome-txt-wrap .find-us{
+        margin-top: 25px;
+    }
+    .welcome-txt-wrap .find-us p{
+        font-size: 16px;
+        padding-top: 1px;
+    }
+    .welcome-txt-wrap .find-us .bx-chevrons-right {
+        font-size: 21px;
+    }
+    .welcome-txt-wrap .find-us ul {
+
+    }
+    .welcome-txt-wrap .btn {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .welcome .welcome-image img{
+        width: 500px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container .welcome{
+        max-width: 960px;
+        background-color: burlywood;
+    }
+    .welcome-txt-wrap .welcome-text h1 {
+        font-size: 40px;
+    }
+    .welcome-txt-wrap .welcome-text h1 .navco{
+        font-size: 40px;
+    }
+    .welcome-txt-wrap .welcome-text .company-name{
+        font-size: 23px;
+    }
+    .welcome-txt-wrap .welcome-text p{
+        font-size: 15px;
+    }
+    .welcome-txt-wrap .find-us{
+        margin-top: 20px;
+    }
+    .welcome-txt-wrap .find-us p{
+        font-size: 15px;
+        padding-top: 1px;
+    }
+    .welcome-txt-wrap .find-us .bx-chevrons-right {
+        font-size: 21px;
+    }
+    .welcome-txt-wrap .find-us ul {
+
+    }
+    .welcome-txt-wrap .find-us i{
+        font-size: 20px;
+    }
+    .welcome-txt-wrap .btn {
+        margin-top: 12px;
+        font-size: 13.5px;
+    }
+
+    .welcome .welcome-image img{
+        width: 400px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container .welcome{
+        max-width: 740px;
+        background-color: burlywood;
+    }
+    .welcome-txt-wrap .welcome-text h1 {
+        font-size: 30px;
+    }
+    .welcome-txt-wrap .welcome-text h1 .navco{
+        font-size: 30px;
+    }
+    .welcome-txt-wrap .welcome-text .company-name{
+        font-size: 18px;
+    }
+    .welcome-txt-wrap .welcome-text p{
+        font-size: 13px;
+    }
+    .welcome-txt-wrap .find-us{
+        margin-top: 12px;
+    }
+    .welcome-txt-wrap .find-us p{
+        font-size: 13px;
+        padding-top: 1.5px;
+    }
+    .welcome-txt-wrap .find-us .bx-chevrons-right {
+        font-size: 18px;
+        /* padding-top: px; */
+    }
+    .welcome-txt-wrap .find-us ul {
+        width: 70px;
+        /* padding-top: 2px; */
+    }
+    .welcome-txt-wrap .find-us i{
+        font-size: 18px;
+        /* padding-bottom: 2px; */
+        /* margin-bottom: 2px; */
+    }
+    .welcome-txt-wrap .btn {
+        margin-top: 3px;
+        font-size: 11.5px;
+        width: 100px;
+        letter-spacing: 0.5px;
+    }
+
+    .welcome .welcome-image img{
+        width: 330px;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px){
+    .container .welcome{
+        max-width: 410px;
+        background-color: burlywood;
+    }
+    .welcome .welcome-image img{
+        display: none;
+        /* width: 330px; */
+    }
+}
+/* @media (min-width: 1024px) and (max-width: 1439px){
+    .container .welcome{
+        max-width: 1000px;
+        background-color: antiquewhite;
+    }
+    .welcome-txt-wrap .welcome-text h1{
+        font-size: 45px;
+    }
+    .welcome-txt-wrap .welcome-text h1 .navco{
+        font-size: 45px;
+    }
+    .welcome-txt-wrap .welcome-text span{
+        font-size: 20px;
+    }
+    .welcome-txt-wrap .welcome-text p{
+        margin-top: 3px;
+        font-size: 15px;
+    }
+    .welcome-txt-wrap .find-us{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .welcome-txt-wrap .find-us .bx-chevrons-right{
+        padding-top: 2px;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+    .welcome-txt-wrap .find-us ul{
+        padding-top: 1.5px;
+    }
+    .welcome-txt-wrap .find-us i{
+        font-size: 20px;
+    }
+    .welcome-txt-wrap .btn{
+        font-size: 15px;
+    }
+    .welcome .welcome-image img{
+        width: 400px;
+    }
+} */
